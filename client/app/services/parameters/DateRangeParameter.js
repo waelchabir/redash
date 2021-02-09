@@ -152,6 +152,16 @@ const DYNAMIC_DATE_RANGES = {
       () => moment().endOf("day")
     ),
   },
+  this_month_and_last_12_months: {
+    name: "This month and Last 12 months",
+    value: untilNow(
+      () =>
+        moment()
+          .subtract(12, "months")
+          .startOf("month"),
+      () => moment().endOf("day")
+    ),
+  },
 };
 
 export const DynamicDateRangeType = PropTypes.oneOf(values(DYNAMIC_DATE_RANGES));

@@ -106,6 +106,11 @@ const DYNAMIC_DATE_OPTIONS = [
     value: getDynamicDateRangeFromString("d_last_12_months"),
     label: null,
   },
+  {
+    name: "This month and Last 12 months",
+    value: getDynamicDateRangeFromString("d_this_month_and_last_12_months"),
+    label: null,
+  },
 ];
 
 const DYNAMIC_DATETIME_OPTIONS = [
